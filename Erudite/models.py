@@ -28,14 +28,14 @@ class SemesterECE(models.Model):
 class SubjectCS(models.Model):
     subs=models.CharField(max_length=30)
     semeCS=models.ForeignKey(SemesterCS,on_delete=models.CASCADE)
-    link=models.CharField(max_length=50)
+    link=models.CharField(max_length=100)
     def __str__(self):
         return self.subs
 
 class SubjectECE(models.Model):
     subs=models.CharField(max_length=30)
     semeECE=models.ForeignKey(SemesterECE,on_delete=models.CASCADE)
-    link=models.CharField(max_length=50)
+    link=models.CharField(max_length=100)
     def __str__(self):
         return self.subs
 
