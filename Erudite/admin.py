@@ -7,3 +7,5 @@ from .models import Stream,SemesterECE,SemesterCS,SubjectCS,SubjectECE
 admin.site.register(Stream)
 admin.site.register(SemesterCS)
 admin.site.register(SubjectCS)
+admin.site.register(SemesterECE)
+admin.site.register(SubjectECE)
